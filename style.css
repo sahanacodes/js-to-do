@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+    color: #343A40;
+    font-size: 1.2vw;
+}
+
+.nav{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #112B3C;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav h4 {
+    margin-right: 40vw;
+}
+
+.nav h4:hover {
+    opacity: 0.8;
+}
+
+.nav ul li {
+    margin-right: 5vw;
+}
+
+.nav ul li:hover{
+    opacity: 0.8;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.entry{
+    margin-bottom: 3vh;
+}
+
+label{
+    display: block;
+    margin-bottom: 1vh;
+}
+
+input{
+    padding: 1vw;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #D1D1D1;
+    width: 60vw;
+}
+
+#name{
+    height: 3vh;
+}
+
+#description{
+    height: 15vh;
+}
+
+button{
+    margin: 2vh 3vw;
+    width: 10vw;
+    height: 6vh;
+    border-style: none;
+    background-color: #112B3C;
+    color: #f5f5f5;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+table{
+    margin: 3vh 0 20vh 0;
+    text-align: center;
+    max-width: 80vw;
+    color: #343A40;
+}
+
+th{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #D1D1D1;
+    padding: 2vh;
+}
+
+td{
+    padding: 1vh;
+    min-width: 10vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+footer{
+    background-color: #112B3C;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    padding: 1.5vh;
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 2.7vw;
+    }
+    button{
+        font-size: 2vw;
+        width: 14vw;
+        height: 4vh;
+    }
+  }

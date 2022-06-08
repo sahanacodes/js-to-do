@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h4><a href="#">TO-DO LIST</a></h4>
+      <ul>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Done</a></li>
+        <li><a href="#">Deleted</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="entry">
+        <label for="name"><b>Task</b></label>
+        <input
+          type="text"
+          placeholder="Enter task name"
+          name="name"
+          id="name"
+          required
+        />
+      </div>
+
+      <div class="entry">
+        <label for="text"><b>Description</b></label>
+        <input
+          type="text"
+          placeholder="Enter task description"
+          name="description"
+          id="description"
+          required
+        />
+      </div>
+
+      <div class="response">
+        <button type="submit" class="registerbtn" id="addItem">Add Item</button>
+        <button type="submit" class="registerbtn" id="clearList" onclick="clearStorage()">Clear List</button>
+      </div>
+    </div>
+
+    <div class="items" id="items">
+      <h3>Your Items</h3>
+
+      <table>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Task Name</th>
+          <th>Task Description</th>
+          <th>Actions</th>
+        </tr>
+
+        <tbody id="tableBody">
+          <tr>
+            <td>1</td>
+            <td>Study for Exams</td>
+            <td>Prepare for semester end examinations</td>
+            <td><button type="submit" class="registerbtn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lunch Party</td>
+            <td>Prepare for the Lunch Party coming up this weekend</td>
+            <td><button type="submit" class="registerbtn">Delete</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Clean</td>
+            <td>Clean the entire apartment before the party</td>
+            <td><button type="submit" class="registerbtn">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>Copyright &copy 2022.</footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
